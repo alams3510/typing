@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+       <div id="img">
+        <img src="https://thumbs.dreamstime.com/b/hand-typing-vector-icon-logo-design-193305031.jpg" width="90px" height="50px" alt="logo">      </div>
+       <div>
+        <span style="font-weight: bolder;">Typing Ninja</h2>
+
+       </div>
+            <div>
+                <button id="start" onclick="starts()">Start</button>
+                <button id="stop" onclick="stops()">End</button>    
+                <button onclick="reset()">reset</button>    
+
+            </div>
+
+            <div id="select" >
+                <select id="selection" onchange="getselect()">
+                    <option disabled selected hidden >select</option>
+                    <option value=".5" >.5 minute</option>
+                    <option value="1" >1 minute</option>
+                    <option value="2" >2 minute</option>
+                    <option value="5" >5 minute</option>
+                </select>
+                <button onclick="starts()">start</button>
+            </div>
+               <div id="clock">
+                <span id="sec">00</span>
+                <span id="msec">00</span>
+            </div>
+                
+    </nav>
+
+        <div class="range">
+            <label>Take Typing Test</label>
+            <br>
+            <input id="range" type="range" value="" min="0" >
+            <input type="hidden" id="hidden" value="">
+        </div>
+    <section>
+        <p id="text">
+            Modern humans arrived on the Indian subcontinent from Africa no later than 55,000 years ago. Their long occupation, initially in varying forms of isolation as hunter-gatherers, has made the region highly diverse, second only to Africa in human genetic diversity.Settled life emerged on the subcontinent in the western margins of the Indus river basin 9,000 years ago, evolving gradually into the Indus Valley Civilisation of the third millennium BCE.By 1200 BCE, an archaic form of Sanskrit, an Indo-European language, had diffused into India from the northwest,unfolding as the language of the Rigveda, and recording the dawning of Hinduism in India.The Dravidian languages of India were supplanted in the northern and western regions.By 400 BCE, stratification and exclusion by caste had emerged within Hinduism,and Buddhism and Jainism had arisen, proclaiming social orders unlinked to heredity.Early political consolidations gave rise to the loose-knit Maurya and Gupta Empires based in the Ganges Basin.Their collective era was suffused with wide-ranging creativity,but also marked by the declining status of women,and the incorporation of untouchability into an organised system of belief.In South India, the Middle kingdoms exported Dravidian-languages scripts and religious cultures to the kingdoms of Southeast Asia.
+
+            In the early medieval era, Christianity, Islam, Judaism, and Zoroastrianism put down roots on India's southern and western coasts.[41] Muslim armies from Central Asia intermittently overran India's northern plains,[42] eventually establishing the Delhi Sultanate, and drawing northern India into the cosmopolitan networks of medieval Islam.[43] In the 15th century, the Vijayanagara Empire created a long-lasting composite Hindu culture in south India.[44] In the Punjab, Sikhism emerged, rejecting institutionalised religion.[45] The Mughal Empire, in 1526, ushered in two centuries of relative peace,[46] leaving a legacy of luminous architecture.[h][47] Gradually expanding rule of the British East India Company followed, turning India into a colonial economy, but also consolidating its sovereignty.[48] British Crown rule be</p>
+    </section>
+    <div id="result">
+     <h1 class="result">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam voluptatum temporibus nobis quisquam velit atem. LHarum!</h1>
+    </div>
+    <div >
+        <textarea id="textarea" placeholder="write here....."  rows="10" cols="60"></textarea>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
